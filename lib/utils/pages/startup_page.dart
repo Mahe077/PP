@@ -21,7 +21,7 @@ class StartupPage extends StatefulWidget {
 class _StartupPageState extends State<StartupPage> {
   void _logButtonClick() {
     logger.d("Button clicked");
-    Navigator.popAndPushNamed(context, '/login');
+    Navigator.popAndPushNamed(context, '/login'); //TODO:Add other navigation
   }
 
   @override
