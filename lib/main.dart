@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:pepper_pal/utils/pages/home_page.dart';
 import 'package:pepper_pal/utils/pages/login_page.dart';
+import 'package:pepper_pal/utils/pages/register_page.dart';
 import 'package:pepper_pal/utils/pages/startup_page.dart';
 import 'package:pepper_pal/utils/theme/color_schemes.dart';
 
@@ -24,7 +26,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       routes: {
         '/login': (context) => const LoginPage(),
-        '/start': (context) => const StartupPage()
+        '/start': (context) => const StartupPage(),
+        '/register': (context) => const RegisterPage(),
+        '/home': (context) => const HomePage()
       },
       initialRoute: '/start',
     );
